@@ -1,9 +1,9 @@
 import React from "react";
 import { StatusBarContent } from "./StatusBar";
-import { withRouter } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function SubPage(props) {
-  const { history } = props;
+  const history = useHistory();
   return (
     <>
       <StatusBarContent>
@@ -26,4 +26,4 @@ function SubPage(props) {
   );
 }
 
-export default withRouter(SubPage);
+export default SubPage;
